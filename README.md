@@ -26,7 +26,7 @@
         <i><b>Hợp lệ:</b> Đang đeo khẩu trang</i>
       </td>
       <td align="center">
-        <img src="img_demo/result_1.png" width="380"><br>
+        <img src="img_demo/12.png" width="380"><br>
         <i><b>Vi phạm:</b> Không đeo khẩu trang</i>
       </td>
     </tr>
