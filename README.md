@@ -112,21 +112,21 @@ graph TD
     classDef oval fill:#e1f5fe,stroke:#01579b,stroke-width:2px,rx:15px,ry:15px;
 
     Start([Bắt đầu chương trình]):::oval --> Init[Load Models YOLO & Bật Server]:::rect
-    Init --> Cam{Đọc Frame<br/>Camera?}:::dia
+    Init --> Cam{"Đọc Frame<br/>Camera?"}:::dia
     
-    Cam -- Không --> Wait[Chờ & Thử Lại]:::rect
+    Cam -- Không --> Wait["Chờ & Thử Lại"]:::rect
     Wait --> Cam
     
-    Cam -- Có --> Detect[AI Phân tích:<br/>Người + Khẩu trang + Khoảng cách]:::rect
-    Detect --> Viop{Phát hiện<br/>vi phạm?}:::dia
+    Cam -- Có --> Detect["AI Phân tích:<br/>Người + Khẩu trang + Khoảng cách"]:::rect
+    Detect --> Viop{"Phát hiện<br/>vi phạm?"}:::dia
     
-    Viop -- Không --> Render[Vẽ khung hình & Đẩy video lên Web]:::rect
+    Viop -- Không --> Render["Vẽ khung hình & Đẩy video lên Web"]:::rect
     
-    Viop -- Có --> CheckWait{Đủ Delay?<br/>(Streak/Cooldown)}:::dia
+    Viop -- Có --> CheckWait{"Đủ Delay?<br/>(Streak/Cooldown)"}:::dia
     
     CheckWait -- Chưa --> Render
     
-    CheckWait -- Đã đủ --> Alert[Cảnh báo:<br/>Lưu Ảnh + Báo Telegram]:::rect
+    CheckWait -- Đã đủ --> Alert["Cảnh báo:<br/>Lưu Ảnh + Báo Telegram"]:::rect
     Alert --> Render
     
     Render --> Cam
