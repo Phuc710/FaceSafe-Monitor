@@ -1,0 +1,8 @@
+{
+    "confirm_frames": 8,
+    "dist_threshold": 120,
+    "mask_cooldown": 10,
+    "dist_cooldown": 45,
+    "telegram_token": "8375187823:AAGXe6Q3ou18K7AaEy-BPoo8vu70QcqNOf0",
+    "telegram_chat_id": "6560022754"
+}
